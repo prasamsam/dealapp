@@ -17,7 +17,7 @@
                                         <div class="form-group">
                                             <label>Product Name</label>
                                             <input type="text" class="form-control border-input"
-                                                   placeholder="Product Name">
+                                                   placeholder="Product Name" name="Productname">
                                         </div>
                                     </div>
                                 </div>
@@ -26,7 +26,7 @@
                                         <div class="form-group">
                                             <label for="food-category">Product Categories</label>
                                             <select id="food-catagory" class="form-control border-input"
-                                                    placeholder="Here can be your description" value="Mike">
+                                                    value="" name="Productcategory">
                                                 <option value="">Food</option>
                                                 <option value="">Food</option>
                                                 <option value="">Food</option>
@@ -41,7 +41,7 @@
                                         <div class="form-group">
                                             <label>Product Details</label>
                                             <textarea  class="form-control border-input" rows="6"
-                                                       placeholder="Product Details"></textarea>
+                                                       placeholder="Product Description" name="Productdescription"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -50,7 +50,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label for="Product-image" class="file-upload">Upload Product Image</label>
-                                            <input id="Product-image" type="file" class="form-control border-input">
+                                            <input id="Product-image" type="file" class="form-control border-input" name="Productimage">
                                         </div>
                                     </div>
                                 </div>
@@ -59,21 +59,21 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Price</label>
-                                            <input type="text" class="form-control border-input" placeholder="Price">
+                                            <input type="text" class="form-control border-input" placeholder="Price" name="Price">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Sale Price</label>
                                             <input type="text" class="form-control border-input"
-                                                   placeholder="Sale Price">
+                                                   placeholder="Sale Price" name="Saleprice">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Offer Price</label>
                                             <input type="number" class="form-control border-input"
-                                                   placeholder="Offer Price">
+                                                   placeholder="Offer Price" name="Offerprice">
                                         </div>
                                     </div>
                                 </div>
@@ -87,8 +87,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>

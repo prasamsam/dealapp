@@ -5,7 +5,8 @@ Route::group(['namespace' => 'back'], function () {
 
     Route::group(['prefix' => 'admin'], function () {
         Route::get('/', 'DashboardController@adminPanelHome')->name('admin_dashboard');
-        Route::get('product', 'DashboardController@addVendor')->name('add_vendor');
+        Route::get('add_vendors', 'DashboardController@addVendor')->name('add_vendor');
+        Route::post('add_vendors','DashboardController@addVendorAction')->name('add_vendor');
 
         Route::group(['prefix' => 'user'], function () {
             Route::get('users', 'UserController@usersDetails')->name('users_info');
@@ -15,8 +16,8 @@ Route::group(['namespace' => 'back'], function () {
 
     Route::group(['prefix' => 'vendor'], function () {
         Route::get('/', 'VendorController@myProducts')->name('vendor_products');
-        Route::get('add', 'VendorController@addProduct')->name('add_vendor_products');
-        Route::post('add', 'VendorController@addProductsAction')->name('add_vendor_products');
+        Route::get('add_product', 'VendorController@addProduct')->name('add_vendor_products');
+        Route::post('add_product', 'VendorController@addProductsAction')->name('add_vendor_products');
 
     });
 
@@ -27,10 +28,4 @@ Route::group(['namespace' => 'back'], function () {
 
 
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
